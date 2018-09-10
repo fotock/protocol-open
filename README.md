@@ -31,17 +31,7 @@ POST
 signature = sha1(from + rand + token + ts)
 ```
 
-
-
-
-
-
-
 ### 全局返回状态码 {#title}
-
-|  |
-| :--- |
-
 
 | 返回码 | 说明 |
 | :--- | :--- |
