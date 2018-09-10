@@ -33,7 +33,7 @@ signature = sha1(from + rand + token + ts)
 
 ### 4. 请求示例
 示例 token = hwSsZbfit4VGiIPBOVAgV1ktCBzx0t
-```
+```conf
 POST https://ai.myroome.com HTTP/1.1
 Content-Length：ContentLength
 Content-Type: Application/json
