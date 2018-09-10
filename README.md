@@ -66,4 +66,21 @@ hm-signature: 6927c3c702e8593404bf6bf283583d08d52c6f4e
 
 
 
+### 7. "type" 类型
 
+| type | 说明 |
+| :--- | :--- |
+| ac | Auto Control, 自动控制 |
+| mc | Manual Control, 手动控制 |
+| collection | 自动上传 |
+| app | APP 控制 |
+
+### 8. "attr" 属性名称
+
+| attr | 说明 |
+| :--- | :--- |
+| light | 光线感应 |
+| pir | 红外感应 |
+| smoke | 烟雾感应 |
+| temperature | 温度 |
+| humidity | 湿度 |
