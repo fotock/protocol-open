@@ -31,18 +31,39 @@ POST
 signature = sha1(from + rand + token + ts)
 ```
 
-### 全局返回状态码 {#title}
+### 4. 请求示例
+示例 token = hwSsZbfit4VGiIPBOVAgV1ktCBzx0t
+```
+POST https://ai.myroome.com HTTP/1.1
+Content-Length：ContentLength
+Content-Type: Application/json
+hm-from: jinpai
+hm-ts: 1234567890
+hm-rand: 98765432
+hm-signature: 6927c3c702e8593404bf6bf283583d08d52c6f4e
+
+{"a":"upload","deviceCode":"0600000143218765","type":"collection","attr":"light", "value":87, "ts":1234567890}
+```
+
+### 5. 响应内容
+ ```
+ {"code":0,"msg":"ok"}
+ ```
+
+### 全局返回状态码
 
 | 返回码 | 说明 |
 | :--- | :--- |
-| -1 | 系统繁忙，此时请开发者稍候再试 |
+| -1 | 系统繁忙，此时请稍候再试 |
 | 0 | 请求成功 |
-| 40001 | 获取 access\_token 时 AppSecret 错误，或者 access\_token 无效。请开发者认真比对 AppSecret 的正确性，或查看是否正在为恰当的公众号调用接口 |
-| 40002 | 不合法的凭证类型 |
-| 40003 | 不合法的 OpenID ，请开发者确认 OpenID （该用户）是否已关注公众号，或是否是其他公众号的 OpenID |
-| 40004 | 不合法的媒体文件类型 |
-| 40005 | 不合法的文件类型 |
-| 40006 | 不合法的文件大小 |
+| 1001 | 不合法的客户端 |
+| 1002 | 请求校验失败 |
+| 1003 | 不存在的设备ID |
+| 1004 | 不合法的参数 |
+| 1005 | 需要用POST请求 |
+| 1006 | 需要用HTTPS请求 |
+| 1007 | 消息内容为空 |
+
 
 
 
