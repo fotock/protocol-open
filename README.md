@@ -19,12 +19,8 @@ POST
 | 参数 | 描述 |
 | :--- | :--- |
 | signature | 签名。signature结合了分配的token参数、from来源参数，和请求中的ts时间戳参数。 |
-
-
-
-
-
-
+| from |  |
+|  |  |
 
 
 
